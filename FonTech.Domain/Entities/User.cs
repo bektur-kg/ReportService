@@ -21,4 +21,6 @@ public class User : IEntityId<long>, IAuditable
     public long? UpdatedBy { get; set; }
 
     public UserToken UserToken { get; set; }
+
+    public List<Role> Roles { get; set; }
 }

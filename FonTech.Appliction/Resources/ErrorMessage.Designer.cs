@@ -115,6 +115,24 @@ namespace FonTech.Appliction.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Role already exists.
+        /// </summary>
+        internal static string RoleAlreadyExists {
+            get {
+                return ResourceManager.GetString("RoleAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role not found.
+        /// </summary>
+        internal static string RoleNotFound {
+            get {
+                return ResourceManager.GetString("RoleNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User already exists.
         /// </summary>
         internal static string UserAlreadyExists {
