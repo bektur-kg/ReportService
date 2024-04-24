@@ -12,7 +12,7 @@ public interface IRoleService
     /// Create Role
     /// </summary>
     /// <param name="dto">Role DTO</param>
-    Task<BaseResult<RoleDto>> CreateRoleAsync(RoleDto dto);
+    Task<BaseResult<RoleDto>> CreateRoleAsync(CreateRoleDto dto);
 
     /// <summary>
     /// Delete Role

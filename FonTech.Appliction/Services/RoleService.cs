@@ -10,13 +10,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FonTech.Appliction.Services;
 
-public class RoleService(IBaseRepository<Role> roleRepository, IBaseRepository<User> userRepository, IMapper mapper) : IRoleService
+public class RoleService
+    (
+        IBaseRepository<Role> roleRepository, 
+        IBaseRepository<User> userRepository,
+        IMapper mapper
+    ) : IRoleService
 {
     private readonly IBaseRepository<Role> _roleRepository = roleRepository;
     private readonly IBaseRepository<User> _userRepository = userRepository;
     private readonly IMapper _mapper = mapper;
 
-    public async Task<BaseResult<RoleDto>> CreateRoleAsync(RoleDto dto)
+    public async Task<BaseResult<RoleDto>> CreateRoleAsync(CreateRoleDto dto)
     {
         var role = _roleRepository.GetAll().FirstOrDefaultAsync(r => r.Name == dto.Name);
 
