@@ -1,3 +1,3 @@
 ﻿namespace FonTech.Domain.Dtos.Report;
 
-public record UpdateReportDto(long Id, string Name, string Description);
+public record UpdateReportDto(string Name, string Description);

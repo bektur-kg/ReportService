@@ -16,7 +16,9 @@ public class User : IEntityId<long>, IAuditable
 
     public DateTime CreateAt { get; set; }
 
-    public DateTime UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
 
-    public long UpdatedBy { get; set; }
+    public long? UpdatedBy { get; set; }
+
+    public UserToken UserToken { get; set; }
 }

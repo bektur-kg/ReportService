@@ -14,11 +14,11 @@ public class Report : IEntityId<long>, IAuditable
 
     public DateTime CreateAt { get; set; }
 
-    public DateTime UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
 
-    public long UpdatedBy { get; set; }
+    public long? UpdatedBy { get; set; }
 
     public User User { get; set; }
 
-    public long UserId { get; set; }
+    public long? UserId { get; set; }
 }

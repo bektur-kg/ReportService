@@ -41,5 +41,5 @@ public interface IReportService
     /// </summary>
     /// <param name="reportDto"></param>
     /// <returns></returns>
-    Task<BaseResult<ReportDto>> UpdateReportAsync(UpdateReportDto reportDto);
+    Task<BaseResult<ReportDto>> UpdateReportAsync(long reportId, UpdateReportDto reportDto);
 }

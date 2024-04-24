@@ -129,7 +129,19 @@
   <data name="ReportsNotFound" xml:space="preserve">
     <value>Reports Not Found</value>
   </data>
+  <data name="UserAlreadyExists" xml:space="preserve">
+    <value>User already exists</value>
+  </data>
   <data name="UserNotFound" xml:space="preserve">
     <value>User not found</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>Password is wrong</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Your token is invalid</value>
+  </data>
+  <data name="InvalidClientRequest" xml:space="preserve">
+    <value>Invalid client request</value>
   </data>
 </root>
